@@ -70,7 +70,7 @@
 
 #ifdef ENABLE_LOG_ERROR
 #define print_error(fmt, args...) \
-    { LOGE(fmt , ## args); }
+    { ALOGE(fmt , ## args); }
 #else
 #define print_error(fmt, args...) \
     do { } while (0)
@@ -78,7 +78,7 @@
 
 #ifdef ENABLE_LOG_DEBUG
 #define print_debug(fmt, args...) \
-    { LOGD(fmt , ## args); }
+    { ALOGD(fmt , ## args); }
 #else
 #define print_debug(fmt, args...) \
     do { } while (0)
@@ -86,7 +86,7 @@
 
 #ifdef ENABLE_LOG_INFO
 #define print_info(fmt, args...) \
-    { LOGI(fmt , ## args); }
+    { ALOGI(fmt , ## args); }
 #else
 #define print_info(fmt, args...) \
     do { } while (0)
